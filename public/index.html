@@ -5,149 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>diverse.hk</title>
-  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/normalize.css"/>
   <link rel="stylesheet" href="styles/foundation.css" />
-  <script src="scripts/vendor/modernizr.js"></script>
-  <script src="scripts/vendor/jquery.js"></script>
-  <script src="scripts/vendor/raphael.min.js"></script>
-  <script src="scripts/vendor/kartograph.min.js"></script>
-<script>
-function loadMap(){
-var map = $K.map('#map');
-
-map.loadMap('images/asia.svg', function() {
-
-  map.addLayer('mylayer');
-}, {padding: -30});
-}
-</script>
+  <link rel="stylesheet" href="styles/app.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 </head>
-<body onLoad="loadMap()">
-<div class="magellan-container" data-magellan-expedition="fixed">
-  <dl class="sub-nav">
-    <dd data-magellan-arrival="intro"><a href="#intro">緣起</a></dd>
-    <dd data-magellan-arrival="sub1"><a href="#sub1">追根溯源</a></dd>
-    <dd data-magellan-arrival="sub2"><a href="#sub2">赤柱之光</a></dd>
-    <dd data-magellan-arrival="sub4"><a href="#sub4">昔日警隊</a></dd>
-    <dd data-magellan-arrival="sub5"><a href="#sub5">同聲同氣？</a></dd>
-    <dd data-magellan-arrival="sub6"><a href="#sub6">融合之夢</a></dd>
-  </dl>
-</div>
+<body>
 
+<div class="special">
+      <div class="panel callout radius">
+  <p>
 
-<a name="intro"></a>
-    
-      <div class="row">
-        <h3 data-magellan-destination="intro">緣起</h3>
-          <img src="http://placehold.it/400x300&text=[img]"/>
-          <p>「一般香港人對伊斯蘭教有很多片面的印象，例如不吃豬肉、娶四個老婆⋯⋯」香港伊斯蘭聯會幹事會成員簡漢佳哈智（Haji M.A. Khan）說。
-          </p><p>
-追根溯源，伊斯蘭教徒早於十九世紀初已植根香港。中環回教清真禮拜總堂（下稱些利街清真寺）的教長（NAME???）說，「最早來到香港的穆斯林教徒來自中國。香港開埠初期己聚集不少回教徒，所以這座清真寺於1849年建立。其後，英國殖民地政府引進大量南亞裔人士（主要是英屬印度的居民），在香港擔當警察、士兵、懲教人員等職位，當中也包括不少回教徒。」</p>
-        
-      </div>
-      <hr/>
-
-
-<a name="sub1"></a>
-<div class="row">
-<h3 data-magellan-destination="sub1">追根溯源</h3>
-<div id="map"></div><!--南亞INTERACTIVE MAP-->
-
-          <p>根據前歷史博物館館長丁新豹博士的考究，英國殖民地政府自1862年起聘用旁遮普邦的錫克族人來港當警察，取代日漸貪腐的印籍孟買海員。為免錫克族人在警隊的勢力過大，殖民地政府在1870年又招募信奉伊斯蘭教的錫克族人來港當警察。
-          </p><p>
-據簡漢佳先生所言，旁遮普地區位於印度和巴基斯坦交界，現時被印、巴兩國分治；印度境內的國民多為錫克教徒及印度教徒，巴基斯坦內的居民則多為回教徒。當時的殖民地政府為配合南亞裔人士的宗教需要，建立了多座各具特色的廟宇，主要集中在接近管治權力核心、較為富裕的中西區、跑馬地及灣仔區。</p>
-
-        <!--
-<div id="map"></div>香港清真寺MAP-->
-      </div>
-      <hr/>
-
-
-<a name="sub2"></a>
-     <div class="row">
-      <h3 data-magellan-destination="sub2">赤柱之光</h3>
-      <div class="large-4 columns">
-          <p>在一眾廟宇當中，位置最為獨特的，莫過於赤柱監獄旁邊的清真寺。丁新豹博士的研究顯示，信奉伊斯蘭教的旁遮普人多被派往域多利監獄及1935年建成的赤柱監獄工作。故此，1937年，政府特別在赤柱監獄旁，為駐守該處的伊斯蘭教徒建成清真寺。根據統計，1939年港府共聘用266名印籍獄吏。二次大戰後，港府改為招聘啹喀兵團，錫克族人逐漸淡出。</p>
-        </div>
-        <div class="large-8 columns">
-          <img src="images/stanley1.png"/>
-        </div>
-      </div>
-      <hr/> 
-
-
-
-<a name="sub4"></a>   
-<div class="row">
-  <h3 data-magellan-destination="sub4">昔日警隊</h3>
-      <div class="large-4 columns">
-          <p>中大社工系助理教授碧樺依說，「1997（主權移交）後，特區政府再沒政策招募南亞裔人士擔任警察等公職。所以，大眾少了在街上見到不同宗教的信徒，變相也令宗教的『能見度』下降，變得邊緣化。大眾對伊斯蘭教、錫克教的認識也變少。」
-          </p><p>
-自1997年起，警務署招聘增加了中學會考中文科合格的要求，令非華裔人士難以達標。直至2011年，警務署才聘請了主權移交後的首名巴基斯坦裔警員呂文廸。呂文廸的母親為香港人，自幼在主流學校讀書，故中文達母語水平。2012年，警務署聘請了主權移交後的首名巴基斯坦裔女警。海內（Heina）在香港土生土長，亦能操流利廣東話及讀寫中文。然而，2012年至今，暫時未見警務署增聘少數族裔的報導。</p>
-        </div>
-        <div class="large-8 columns">
-          <img src="images/indianpolice.png"/>
-        </div>
-</div>
-<hr/>  
-
-<a name="sub5"></a>
-<div class="row">
-  <h3 data-magellan-destination="sub5">同聲同氣？</h3>
-<p>簡漢佳先生說，現時政府沒有制度協助非華裔移民融香港生活。以南亞裔人士為例，他們來港時只能靠親友接濟﹣為成人找工作、為兒童找學校。「對人生路不熟的新移民而言，宗教團體也是一個重要的社群，而我們作為宗教組織也盡量為教友提供支援。」
+香港，據說是一個「國際大都會」，是「金融中心」，也是「購物天堂」。
 </p><p>
-灣仔愛群道的林士德伊斯蘭中心設有一間伊斯蘭幼稚園，學生主要是南亞裔移民。簡先生說，「學校會教中文，但因學生在家庭裡仍然使用母語溝通，中文水平始終難以追上本地學校水平。」
-簡先生說，新移民家長選擇讓子女入讀伊斯蘭背景的學校，主要是因為感覺比較親切、安心。「以禮拜為例，他們可以在學校裡集體進行，比較方便，也可省卻學生在課外認識伊斯蘭教的時間和心力。」</p>
-<div><!-- school map--></div>
-<p>
-    雖然宗教團體會協助教友融入在香港的生活，但根據智經研究中心在2015年3月發表的研究報告，本地非華語學生升讀本地大學的比率遠低於華語學生。碧樺依教授指出，這是因為香港一直未有一套為非母語學生而設的中文教材及考試。</p>
-<p>
-一直以來，非華語學生只能報考英國會考（GCSE）或高考（GCE）的中文科考試，但因這些課程的水平遠低於本地高考或文憑試中文科，所以本地大學一直抗拒承認這些考試成績。
+
+然而，大家有沒有想過，香港「國際化」的地方是什麼？是俯拾皆是的日韓澳紐英法美時裝、美容產品？是丹麥豬仔髀和北海道牛奶？是揉合中西的奶茶、西多、蛋撻？是瑞典出品的書枱、意大利製造的梳化，再加古色古香的酸枝傢俱？
 </p><p>
-教育局在2014／15年度推出「中國語文課程第二語言學習架構」，協助中小學中文科教師教導非華語學生。然而，這套「學習架構」只是理論式支援，為非華語學生提供多少支援、什麼支援，仍然取決於學校和教師的能力和決定。
+在物質層面，香港的「國際化」程度，無疑是在世界前列，絕非歐美絕大部份國家和城市所能比擬。但是，在社會層面，香港又是否能夠與倫敦、柏林比擬？抑或連新德里、里約熱內盧都不如？
 </p><p>
-故此，「學習架構」無法確保非華語學生能得到適當的協助，而教育局也無意為非華語學生制定一套中文（第二語言）的教材。依教育局所言，他們的目標是協助非華語學生「盡早融入主流中文課堂」。智經研究中心的報告早已指出，這並非先進國家的普遍做法，可說是與「國際標準」脫節。
-  </p>
+或者，日復日、年復年，大家忙於為口奔馳，對身邊的很多事物，早已視而不見。Diverse.hk的成立，就是為了探索香港本來所擁有的國際性，也是為了證明網絡資訊傳播，是可以有更多不同方式。
+</p><p>
+以宗教作為起點，是希望能夠一石二鳥，既探究種族和歷史，也窺探建築及其他文化內涵。伊斯蘭教專題之後，尚有三個其他香港的少數宗教，是為抛磚引玉的首個系列。
+</p><p>
+ 這一切都是一個實驗，盼能抛磚引玉。歡迎各位讀者透過Facebook和e-mail和我們交流，我們期待你們的意見。
+</p><p>
+是為序。
+</p>
 
-<div><!-- graph--></div>
 </div>
-<hr/>
 
-<a name="sub6"></a>   
-<div class="row">
-<h3 data-magellan-destination="sub6">融合之夢</h3>
-<p>
-中環清真禮拜堂的教長？？說，他初中時從巴基斯坦移居香港，在觀塘的地利亞修女學校就讀，「我一直沒有學習中文，在香港生活卻鮮有遇到阻礙。香港人都很友善，也很尊重我們的宗教。」？？表示他在中五會考後，到了南非修讀宗教課程，一讀就是六年，兩年前回港當教長。雖然日常事務繁忙，但教長仍希望能在餘暇進修中文，加深了解香港的社會。</p>
-<p>
-提到回教徒學習中文的歷程，簡漢佳先生憶述，以前在跑馬地有一所「嚤囉書館」，專為巴基斯坦裔警察或軍人與本地華裔妻子的孩子（local boys）而設。據簡先生所言，這所學校只設小學部，學生主要修讀烏地語、亞拉伯文、數學，也設宗教科，教授可蘭經。由於當年又未有九年免費教育，所以學生要考上本地中學需要自修中文、英文、科學等科目。</p>
-<p>然而，在上世紀六、七十年代，中文不達母語水平卻沒有阻礙非華裔人士的發展。簡先生說，這些「local boys」因為英文能力比較優秀，所以很多會做政府工，不少更達當時開放給非華裔人士的最高職位﹣行政主任（Executive Officer, EO）。「當時的非華裔人士與華人平起平坐，因為在殖民地政府治下，大家都屬於被壓逼、限制的一群，大家能走多遠、爬多高，都是相同。EO已是最高職位，再上（AO）全部都是蘇格蘭人或英格蘭人」，簡先生憶述。</p>
-<p>
-九七前後，大部份擁外國國籍的「local boys」都已移居外地，如英國、澳洲、加拿大。留在香港的巴基斯坦人，大部份是八十年代起透過港府吸引移民政策來港。許多南亞裔家庭有一個父親在香港工作，然後就申請家人來港定居。簡先生說，「因為他們的教育水平不及以往在政府工作的人士，所以收入偏低，孩子也難以適應香港生活及跟上教育水平。」</p>
+  <a class="th" href="islam.html">
+  <img src="images/shared/islam-header.jpg">
+</a>
+
+<a href="islam.html" class="button expand">閱讀</a>
 </div>
-<hr/> 
 
-      <footer class="row">
-
+ <footer class="row">
           <div class="row">
-            <div class="large-6 columns">
-              <p>© Interact New Media Production 2015</p>
-            </div>
-            <div class="large-6 columns">
-              <ul class="inline-list right">
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-                <li><a href="#">Link 4</a></li>
+            <div class="large-8 columns">
+              <ul class="inline-list left">
+                <li><a href="#">diverse.hk</a></li>
+                <li><a href="#">招募人才</a></li>
               </ul>
             </div>
+            <div class="large-4 columns">
+            <p>© Interact New Media Production 2015</p>
+            </div>
           </div>
-
       </footer>
-  <script src="scripts/foundation/foundation.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation-essential/5.5.1/js/foundation.min.js"></script>
   <script src="scripts/foundation/foundation.magellan.js"></script>
-  <script src="scripts/navbar.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+
 </body>
 </html>

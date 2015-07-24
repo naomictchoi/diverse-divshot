@@ -55,16 +55,17 @@ html {
 
 html,
 body {
-  font-size: 100%; }
+  font-size: 120%; }
 
 body {
-  background: #fff;
-  color: #222;
+  background: #09465B;
+  color: #4A6169;
   cursor: auto;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: 'Abel', "Helvetica Neue", Helvetica, Roboto, Arial, 'cwTeXHei', sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 100;
   line-height: 1.5;
+  letter-spacing: 2px;
   margin: 0;
   padding: 0;
   position: relative; }
@@ -126,7 +127,8 @@ select {
 .row {
   margin: 0 auto;
   max-width: 62.5rem;
-  width: 100%; }
+  width: 100%; 
+margin-top: 30px;}
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -160,8 +162,8 @@ select {
 
 .column,
 .columns {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
   width: 100%;
   float: left; }
 
@@ -908,8 +910,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
     float: left; }
 
   .large-1 {
@@ -1175,11 +1177,11 @@ button, .button {
   button.secondary, .button.secondary {
     background-color: #e7e7e7;
     border-color: #b9b9b9;
-    color: #333333; }
+    color: #8FC8DA; }
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
       background-color: #b9b9b9; }
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
-      color: #333333; }
+      color: #8FC8DA; }
   button.success, .button.success {
     background-color: #43AC6A;
     border-color: #368a55;
@@ -3102,7 +3104,7 @@ meta.foundation-mq-topbar {
   .orbit-bullets {
     display: none; } }
 [data-magellan-expedition], [data-magellan-expedition-clone] {
-  background: #FFFFFF;
+  background: #09465B;
   min-width: 100%;
   padding: 10px;
   z-index: 50; }
@@ -3117,7 +3119,7 @@ meta.foundation-mq-topbar {
   display: inline-block;
   font-size: 0;
   width: 100%;
-  background: #333333; }
+  background: #09465B; }
   .icon-bar > * {
     display: block;
     float: left;
@@ -3728,7 +3730,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  color: #222222;
+  color: #63D7FF;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -3737,7 +3739,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0.2rem;
   text-rendering: optimizeLegibility; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-    color: #6f6f6f;
+    color: #63D7FF;
     font-size: 60%;
     line-height: 0; }
 
@@ -4426,7 +4428,7 @@ blockquote p {
   .sub-nav dt,
   .sub-nav dd,
   .sub-nav li {
-    color: #999999;
+    color: #40CFA5;
     float: left;
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-size: 0.875rem;
@@ -4436,18 +4438,18 @@ blockquote p {
     .sub-nav dt a,
     .sub-nav dd a,
     .sub-nav li a {
-      color: #999999;
+      color: #40CFA5;
       padding: 0.1875rem 1rem;
       text-decoration: none; }
       .sub-nav dt a:hover,
       .sub-nav dd a:hover,
       .sub-nav li a:hover {
-        color: #737373; }
+        color: #4A6169; }
     .sub-nav dt.active a,
     .sub-nav dd.active a,
     .sub-nav li.active a {
       border-radius: 3px;
-      background: #008CBA;
+      background: #D57E77;
       color: #FFFFFF;
       cursor: default;
       font-weight: normal;
@@ -4455,7 +4457,7 @@ blockquote p {
       .sub-nav dt.active a:hover,
       .sub-nav dd.active a:hover,
       .sub-nav li.active a:hover {
-        background: #0078a0; }
+        background: #9C213F; }
 
 /* Foundation Joyride */
 .joyride-list {
@@ -4639,10 +4641,10 @@ blockquote p {
     color: #FFFFFF; }
   .label.secondary {
     background-color: #e7e7e7;
-    color: #333333; }
+    color: #D57E77; }
   .label.info {
     background-color: #a0d3e8;
-    color: #333333; }
+    color: #D57E77; }
 
 .off-canvas-wrap {
   -webkit-backface-visibility: hidden;

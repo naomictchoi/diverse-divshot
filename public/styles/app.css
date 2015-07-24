@@ -1,1 +1,124 @@
 /* custom styles */
+
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+
+.full-width {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+	
+		h1 {
+			color:#5d5d5d;
+			font-size:30px;
+      font-family: 'Abel', 'cwTeXHei', serif;
+		}
+
+		.legend span {
+    width: 33.333333%;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+
+h4 {
+	color:#6ABEDA;
+  text-align: center;
+  font-family: 'Abel', 'cwTeXHei', serif;
+}
+
+body {
+	background: #FFE5C8;
+  color: #418FB2;
+  font-family: 'Abel', 'cwTeXHei', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #5d5d5d;
+  font-family: 'Abel', 'cwTeXHei', serif;
+}
+  h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+    color: #5d5d5d;
+}
+[data-magellan-expedition], [data-magellan-expedition-clone] {
+  background: #09465B;
+}
+
+a {
+  color: #008CBA; }
+  a:hover, a:focus {
+    color: #0078a0; }
+
+  .sub-nav dt,
+  .sub-nav dd,
+  .sub-nav li {
+    color: #40CFA5; 
+  font-family: 'cwTeXHei', serif;}
+    .sub-nav dt a,
+    .sub-nav dd a,
+    .sub-nav li a {
+      color: #40CFA5; }
+      .sub-nav dt a:hover,
+      .sub-nav dd a:hover,
+      .sub-nav li a:hover {
+        color: #9CC3D0; }
+    .sub-nav dt.active a,
+    .sub-nav dd.active a,
+    .sub-nav li.active a {
+      background: #D57E77;
+      color: #FFFFFF; }
+      .sub-nav dt.active a:hover,
+      .sub-nav dd.active a:hover,
+      .sub-nav li.active a:hover {
+        background: #9C213F; }
+
+
+.bibliography li {
+  color: #195644;
+}
+
+figure {
+  margin: 0px 0px 0px 30px;
+  position: relative;
+}
+
+figure img {
+  max-width: 100%;
+  display: block;
+  position: relative;
+}
+
+figcaption {
+display: block;
+  padding: 10px 20px 20px 10px; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #09465B;
+  color: #D57E77;
+  font-size:0.9rem;
+  font-size: 1.2vw;
+  height: 17%;
+  width: 100%;
+  opacity: 0;
+  text-align: left;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.no-touch figure:hover figcaption,
+ figure.cs-hover figcaption {
+opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+
+.magellan-container {display:none}

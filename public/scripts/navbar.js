@@ -1,3 +1,4 @@
+
 $(document).foundation({
 "magellan-expedition": {
   active_class: 'active', // specify the class used for active sections

@@ -1,41 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>diverse.hk</title>
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/foundation.css" />
-  <script src="scripts/vendor/modernizr.js"></script>
-  <script src="scripts/vendor/jquery.js"></script>
-  <script src="scripts/vendor/raphael.min.js"></script>
-  <script src="scripts/vendor/kartograph.min.js"></script>
-<script>
-function loadMap(){
-var map = Kartograph.map('#map', 600, 0);
 
-map.loadMap('images/world.svg', function() {
-
-    map.addLayer("layers");
-      
-}, { padding: -30 })
-}
-</script>
-</head>
-
-<script>
-    $(function() {
-        // import some classes
-        window.map = kartograph.map('#map');
-        var resize = function() {
-            var c = $('#map');
-            var ratio = map.viewAB.width / map.viewAB.height;
-            c.height( c.width() / ratio );
-            map.resize();
-        };
-        $(window).resize(resize);
-        map.loadMap('italy.svg', function(map) {
+map.loadMap('images/italy.svg', function(map) {
                 map.addLayer('graticule', {
                     styles: {
                         'stroke-width': 0.2
@@ -50,7 +14,7 @@ map.loadMap('images/world.svg', function() {
                  .addLayer('ITA', {
                     name: 'fg'
                 });
-                map.getLayer('context').applyTexture('t0.png');
+                map.getLayer('context').applyTexture('images/t0.png');
                 map.addFilter('oglow', 'glow', {
                     size: 1,
                     color: '#988',
@@ -64,13 +28,14 @@ map.loadMap('images/world.svg', function() {
                     inner: true
                 });
                 map.getLayer('bg').applyFilter('myglow');
-            map.getLayer('context').applyTexture('t0.png');
+            map.getLayer('context').applyTexture('images/t0.png');
             map.addFilter('oglow', 'glow', { size: 1, color: '#988', strength: 1, inner: false });
             map.getLayer('bgback').applyFilter('oglow');
             map.addFilter('myglow', 'glow', { size: 2, color: '#945C1B', inner: true });
             map.getLayer('bg').applyFilter('myglow');
-            resize();
-            var cities = [
+
+
+var cities = [
                 [new kartograph.LonLat(12.469482,41.869561), 'Roma', true],
                 [new kartograph.LonLat(11.3598, 44.4808), 'Bologna'],
                 [new kartograph.LonLat(14.241028, 40.86368), 'Napoli'],
@@ -95,7 +60,6 @@ map.loadMap('images/world.svg', function() {
             map.addSymbols({
                 type: kartograph.Label,
                 data: regions,
-                class: 'clblbg',
                 location: function(d) { return d[0]; },
                 style: function(d) { return 'font-family: AquilineTwoRegular; stroke: #fff; stroke-width: 2px; fill:#fff; opacity: .3; font-size: '+d[2]+'px;' },
                 text: function(d) { return d[1] }
@@ -103,7 +67,6 @@ map.loadMap('images/world.svg', function() {
             map.addSymbols({
                 type: kartograph.Label,
                 data: regions,
-                 class: 'clblfg',
                 location: function(d) { return d[0]; },
                 style: function(d) { return 'font-family: AquilineTwoRegular; fill:#511; fill-opacity: .35; font-size: '+d[2]+'px;' },
                 text: function(d) { return d[1] }
@@ -111,7 +74,6 @@ map.loadMap('images/world.svg', function() {
             map.addSymbols({
                 type: kartograph.Label,
                 data: cities,
-                 class: 'citylbl',
                 location: function(d) { return d[0]; },
                 style: function(d) { return 'font-family: AquilineTwoRegular; fill:#544; font-size: '+(d[2] ? 22 : 16)+'px; text-anchor:start;' },
                 text: function(d) { return d[1] },
@@ -120,11 +82,11 @@ map.loadMap('images/world.svg', function() {
             map.addSymbols({
                 type: kartograph.Icon,
                 data: cities,
-                class: 'cityico',
                 location: function(d) { return d[0]; },
                 offset: [-5,-5],
-                icon: function(d) { return d[2] ? 'star.png' : 'dot.png' }
+                icon: function(d) { return d[2] ? 'images/star.png' : 'images/dot.png' }
             });
+
             var ferries = [
                 /* Palermo -> Cagliari */
                 [[13.359375, 38.08269], [13.43, 38.195],[13.40, 38.294],[12.57, 38.546],[11.83, 38.361],[10.38, 38.861],[9.67, 38.895],[9.10, 39.213],[9.10, 39.213],[9.10, 39.213]],
@@ -138,7 +100,7 @@ map.loadMap('images/world.svg', function() {
             var p = map.addGeoPath(ferries[2], 'MS S ', 'ferry');
             var r = map.paper;
             var len = p.getTotalLength();
-            var e = r.image('ship.png', 0, 0, 15, 8);  // r.ellipse(0, 0, 7, 3).attr({stroke: "none", fill: "#000"})
+            var e = r.image('images/ship.png', 0, 0, 15, 8);  // r.ellipse(0, 0, 7, 3).attr({stroke: "none", fill: "#000"})
             r.customAttributes.along = function (v) {
                 var point = p.getPointAtLength(v * len);
                 return {
@@ -157,39 +119,3 @@ map.loadMap('images/world.svg', function() {
             e.attr('along',0.2);
             setTimeout(run, 4000);
         }, { padding: -6 });
-    });
-    $('.k-layer-toggle input').change(function(evt) {
-        var paths = $('#map .'+evt.target.value);
-        if (evt.target.checked) paths.show();
-        else paths.hide();
-    })
-</script>
-
-
-<p>This example map of Italy showcases some ways you can style Kartograph maps. The base colors are defined in CSS, glow filters and image textures are applied in SVG. Also you can see heavy use of symbols (labels and icons) as well as geo paths. The labels are set in the <a href="http://www.fontsquirrel.com/fonts/Aquiline" target="_blank">Aquiline</a> font, created by Manfred Klein.</p>
-
-
-<div id="map"></div>
-
-<div class="k-layer-toggle">
-    <h2>Toggle Layer Visibility</h2>
-    <div class="row">
-        <div class="span3">
-            <label class="checkbox"><input type="checkbox" checked value="graticule"> Graticule</label>
-            <label class="checkbox"><input type="checkbox" checked value="bgback"> Land Outer Glow</label>
-            <label class="checkbox"><input type="checkbox" checked value="bg"> Land Inner Glow</label>
-            <label class="checkbox"><input type="checkbox" checked value="bgstroke"> Land Outline</label>
-        </div><div class="span3">
-            <label class="checkbox"><input type="checkbox" checked value="context"> Surrounding Countries</label>
-            <label class="checkbox"><input type="checkbox" checked value="fg"> Italian Provinces</label>
-            <label class="checkbox"><input type="checkbox" checked value="citylbl"> City Label</label>
-            <label class="checkbox"><input type="checkbox" checked value="cityico"> City Icons</label>
-        </div><div class="span3">
-            <label class="checkbox"><input type="checkbox" checked value="clblbg"> Country Label Background</label>
-            <label class="checkbox"><input type="checkbox" checked value="clblfg"> Country Label Foreground</label>
-            <label class="checkbox"><input type="checkbox" checked value="ferry"> Ferry Routes</label>
-        </div>
-    </div>
-</div>
-
-<link rel="stylesheet" href="style.css" type="text/css" />

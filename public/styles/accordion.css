@@ -1,0 +1,13 @@
+
+    .accordion .accordion-navigation.active > a, .accordion dd.active > a {
+      background: #09465B; }
+    .accordion .accordion-navigation > a, .accordion dd > a {
+      background: #09465B;
+      color: #40CFA5; }
+      .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
+        background: #5d5d5d; }
+      .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
+        background: #FFFFFF;
+      }
+
+

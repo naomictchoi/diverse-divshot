@@ -55,13 +55,13 @@ html {
 
 html,
 body {
-  font-size: 120%; }
+  font-size: 100%; }
 
 body {
   background: #09465B;
   color: #4A6169;
   cursor: auto;
-  font-family: 'Abel', "Helvetica Neue", Helvetica, Roboto, Arial, 'cwTeXHei', sans-serif;
+  font-family: 'Abel', "Helvetica Neue", Helvetica, Roboto, Arial, 'cwTeXMing', sans-serif;
   font-style: normal;
   font-weight: 100;
   line-height: 1.5;
@@ -1156,7 +1156,7 @@ button, .button {
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: 'Abel', "Helvetica Neue", Helvetica, Roboto, Arial,'cwTeXMing', sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -3535,7 +3535,7 @@ ul.pagination {
       background: #EFEFEF;
       color: #222222;
       display: block;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: 'Abel', "Helvetica Neue", Helvetica, Roboto, Arial, 'cwTeXMing', sans-serif;
       font-size: 1rem;
       padding: 1rem; }
       .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {

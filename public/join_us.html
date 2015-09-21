@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>diverse.hk</title>
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <link rel="stylesheet" href="styles/foundation.css" />
+  <link rel="stylesheet" href="styles/app.css" />
+  <link rel="stylesheet" href="styles/homepage.css" />
+  <link rel="stylesheet" href="styles/accordion.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="row">
+  <h1>加入diverse.hk製作團隊</h1>
+  <p>diverse.hk 由一群相信科技、「或者比較有理想」的青年成立，長期事浮於人。<br/>
+    若你對以下空缺有興趣，歡迎填寫表格與我們聯絡。</p>
+  </div>
+  <div class="row">
+  <ul class="accordion" data-accordion>
+  <li class="accordion-navigation">
+    <a href="#panel1a">Full-stack Web Developer</a>
+    <div id="panel1a" class="content">
+      <p><strong>Description</strong></p>
+      <p>You will be responsible for creating a functional implementation of the website's interface based a static mockup from the Visual/UI Designer. You will also be responsible for coding interactive visualizations of data, which may include interactive charts and maps.</p>
+      <p><strong>Requirements</strong></p>
+      <p>
+      <ul><li>Knowledge of CSS, HTML, JavaScript</li>
+      <li>Experience working with web-based visualizations (i.e. D3, DataMaps etc) is a plus</li></ul>
+      </p>
+      <p><strong>Interested?</strong></p>
+      <p><a href="#" data-reveal-id="myModal" class="radius button">Join Us</a></p>
+    </div>
+  </li>
+  <li class="accordion-navigation">
+    <a href="#panel2a">Visual/UI Designer</a>
+    <div id="panel2a" class="content">
+      <p><strong>Description</strong></p>
+    <p>
+    You will be responsible for designing the look-and-feel of the website as well as the layout and interaction of content tailored to each individual story and article. </p>
+    <p><strong>Requirements</strong></p>
+    <p>
+      <ul>
+        <li>Has an innovative and creative mind for web design</li>
+        <li>Proficient in Photoshop, Illustrator</li>
+    <li>Experience manipulating svg maps is a plus</li>
+    <li>Efficient, able to meet deadlines</li>
+    <li>Please be prepared to provide sample works/portfolio</li>
+  </ul></p>
+  <p><strong>Interested?</strong></p>
+  <p><a href="#" data-reveal-id="myModal" class="radius button">Join Us</a></p>
+    </div>
+  </li>
+  <li class="accordion-navigation">
+    <a href="#panel3a">New Media Research Assistant</a>
+    <div id="panel3a" class="content">
+      <p><strong>Description</strong></p>
+  <p>
+    You will be responsible for updating the website. Occasional tasks may include assisting the journalist on visits and in interviews.</p>
+    <p><strong>Requirements</strong></p>
+    <p>
+    <ul>
+    <li>Interested in culture and diversity of Hong Kong and the world</li>
+    <li>Basic knowledge of web technology</li>
+    <li>Willingness to learn programming for the web (e.g. HTML, CSS, Javascript)</li>
+    <li>Working knowledge of Photoshop and Illustrator is a plus, but not required</li>
+    <li>Efficient and responsible</li>
+    <li>Curious, creative, and passionate</li>
+    </ul>
+  </p>
+    <p><strong>Interested?</strong></p>
+    <p><a href="#" data-reveal-id="myModal" class="radius button">Join Us</a></p>
+    </div>
+  </li>
+</ul>
+</div>
+</div>
+
+
+  <div class="row">
+  
+  <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog"> 
+  <p><form method="POST" action="/__/forms/contact">
+    <label>Name:</label> <input type="text" name="name">
+    <label>Email:</label> <input type="email" name="email">
+    <label>Interested Position:</label> <input type="text" name="position">
+    <button type="submit">Submit</button>
+  </form></p>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+</div>
+
+  <footer class="row full-width">
+        <div class="row">
+            <ul class="inline-list left">
+              <li><a href="#"><img src="images/logo/diverselogo.png" height="60" width="60"/></a></li>
+              <li><a href="join_us.html">招募人才</a></li>
+            </ul>
+          <ul class="inline-list right">
+              <li><a href="http://www.interactproduction.hk"><img src="images/logo/interactlogo.png" height="150" width="180"/></a>© Interact New Media Production 2015</li>
+            </ul>
+      </div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation-essential/5.5.1/js/foundation.min.js"></script>
+  <script src="scripts/foundation/foundation.reveal.js"></script>
+  <script src="scripts/foundation/foundation.accordion.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+
+</body>
+</html>

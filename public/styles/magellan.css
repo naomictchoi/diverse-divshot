@@ -1,0 +1,26 @@
+ .sub-nav dt,
+  .sub-nav dd,
+  .sub-nav li {
+    color: #40CFA5; 
+  font-family: 'cwTeXMing', serif;
+}
+    .sub-nav dt a,
+    .sub-nav dd a,
+    .sub-nav li a {
+      color: #40CFA5; }
+      .sub-nav dt a:hover,
+      .sub-nav dd a:hover,
+      .sub-nav li a:hover {
+        color: #9CC3D0; }
+    .sub-nav dt.active a,
+    .sub-nav dd.active a,
+    .sub-nav li.active a {
+      background: #D57E77;
+      color: #FFFFFF; }
+      .sub-nav dt.active a:hover,
+      .sub-nav dd.active a:hover,
+      .sub-nav li.active a:hover {
+        background: #9C213F; }
+
+
+.magellan-container {display:none}

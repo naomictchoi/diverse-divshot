@@ -1,0 +1,38 @@
+#footer {
+  position: relative;
+  height: 180px;
+  background-color: #09465B;
+  text-align: center;
+  margin-top: 50px;
+} 
+
+#footer i {
+  font-size: 100px;
+}
+
+#footer .icon {
+  padding: 20px;
+}
+
+#footer p, #footer a {
+  font-weight: 300;
+  font-size: .8em;
+  color: #fff;
+}
+
+@media only screen and (min-width: 40.063em) {
+  #footer .columns:nth-child(n) {
+    border-left: 1px solid #b3b3b3;
+    min-height: 180px;
+    padding-top: 20px;
+  }
+}
+.footer-links {
+  list-style-type: none;
+}
+.footer-links li {
+  margin-top: .5em;
+}
+
+
+ 

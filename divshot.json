@@ -2,5 +2,18 @@
   "name": "diverse-divshot",
   "root": "public",
   "clean_urls": true,
-  "error_page": "error.html"
+  "error_page": "error.html",
+  "forms": {
+    "contact": {
+      "to": "interactproductionhk@gmail.com",
+      "from": "interactproductionhk@gmail.com",
+      "replyTo": "{{name}} <{{email}}>",
+      "subject": "Contact Received from {{name}}",
+      "html": "<b>Name:</b> {{name}}<br/><b>Email:</b> {{email}}<br/><b>Position:</b> {{position}}",
+      "text": "Name: {{name}}",
+      "success": "/contact-received",
+      "failure": "/contact-failure"
+    }
+  },
+  "prerender": true
 }

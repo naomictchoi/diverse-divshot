@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>拜火教在香港</title>
+  <link rel="stylesheet" href="styles/normalize.css"/>
+  <link rel="stylesheet" href="styles/foundation.css" />
+  <link rel="stylesheet" href="styles/app.css" />
+  <link rel="stylesheet" href="styles/c3.css" type="text/css"> 
+  <link rel="stylesheet" href="styles/tooltips.css"> 
+  <link rel="stylesheet" href="styles/magellan.css"> 
+  <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+
+  <link href="scripts/jquery.mb.YTPlayer/dist/css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+  <script src="scripts/jquery.mb.YTPlayer/dist/jquery.mb.YTPlayer.min.js"></script>
+  <script src="../dist/jquery.mb.YTPlayer.min.js"></script>
+<script src="scripts/jquery.mb.YTPlayer/examples/assets/apikey.js"></script>
+<script>
+    jQuery(function () {
+
+        var myPlayer = jQuery("#bgndVideo").YTPlayer({
+            onReady: function (player) {
+                YTPConsole.append(player.id + " player is ready");
+                YTPConsole.append("<br>");
+            }
+        });
+
+        myPlayer.on("YTPData", function (e) {
+            $(".dida").html(e.prop.title + "<br>@" + e.prop.channelTitle);
+            $("#videoData").show();
+        });
+
+        /* END DEBUG ******************************************************************************************/
+
+
+    });
+    /* END FILTER SLIDERS ******************************************************************************************/
+
+    /**
+     *
+     * @param state
+     */
+    function changeLabel(state){
+        $("#togglePlay").html(state != 1 ? "pause" : "play");
+
+        $("#togglePlay").removeClass(state != 1 ? "play" : "pause");
+        $("#togglePlay").addClass(state != 1 ? "pause" : "play");
+    }
+
+    /**
+     *
+     * @param val
+     * @returns {*|number}
+     */
+    function checkForVal(val){
+        return val || 0;
+    }
+
+</script>
+<style>
+#wrapper{
+    position: relative;
+    min-width: 1280px;
+    height:800px;
+}
+body p, h1, span, li{
+  background-color: rgba(254,255,219, 0.8);
+}
+
+</style>
+</head>
+<body>
+
+<div class="magellan-container" data-magellan-expedition="fixed">
+  <dl class="sub-nav">
+    <dd>
+      <a href="index.html"><img src="images/logo/diverselogo.png" height="25" width="25"/></a></dd>
+    <dd data-magellan-arrival="intro"><a href="#intro">宗教源起</a></dd>
+    <dd data-magellan-arrival="sub1"><a href="#sub1">深耕細作</a></dd>
+    <dd data-magellan-arrival="sub2"><a href="#sub2">罕見全職祭師</a></dd>
+    <dd data-magellan-arrival="sub3"><a href="#sub3">社會交流</a></dd>
+  </dl>
+</div>
+
+<div class="full-width">
+<div id="wrapper" style="position:relative; padding:10px 0;z-index:10">
+    <!--7SnmCUwOsts-->
+    <a id="bgndVideo" class="player" data-property="{videoURL:'szzLDakdLOg',containment:'body', showControls:false, autoPlay:true, loop:true, vol:50, mute:false, startAt:0,  stopAt:150, opacity:1, addRaster:true, quality:'hd720', optimizeDisplay:true}">Fire</a> 
+</div>
+      </div>
+ <div class="row">
+   <p>「香港人普遍對拜火教認識不多，但其實拜火教自1852年以前已落戶香港，而且香港是印度以外，全球唯一有全職拜火教祭師的地方<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="Homyar表示，倫敦的拜火教社群近月亦聘請了一名全職祭師。但以他所知，其他地區沒有全職祭師。"><sup>1</sup></span>。」香港拜火教祭師Homyar說。</p>
+  </div>
+
+<a name="intro"></a>
+      <div class="row">
+        <h3 data-magellan-destination="intro"><span>宗教源起</span></h3>
+        <div class="large-12 columns">
+          <p>拜火教，又稱瑣羅亞斯德教、祅教，起源於波斯（即今日的伊朗）的巴斯（Pars）地區，信徒因此亦稱巴斯人，至今有逾三千年的歷史。公元七世紀時，因伊斯蘭教徒勢力擴張，拜火教徒被列為異教徒。為避免各種各樣的逼害，拜火教徒輾轉遷到印度西岸，聚居於孟買一帶。故此，孟買至今仍是最多拜火教徒居住的地方。<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="丁新豹 著《非我族裔》（三聯書店（香港）有限公司 2014）第185頁。"><sup>2</sup></span>
+          </p><p>
+  巴斯人善於經商，在孟買一帶甚有影響力。故此，自十八世紀起，英國的東印度貿易公司已與巴斯人一同到澳門、廣州等地經商。1841年英國佔據香港島後，四名居於澳門的巴斯人在首次土地拍賣中，購入香港的土地，正式植根香港。<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="《非我族裔》第187頁。"><sup>3</sup></span></p>
+        </div>
+      </div>
+      <div class="full-width">
+        <img src="images/zo/migration.jpg"/>
+        <!--map-->
+      </div>
+      <hr/>
+
+
+<a name="sub1"></a>
+<div class="row">
+  <h3 data-magellan-destination="sub1"><span>深耕細作</span></h3>
+  <div class="large-12 columns">
+
+
+    </div><!--Parsi-->
+  </div>
+<div class="row">
+  <div class="large-4 columns">
+          <p>在過去的百多年間，香港不少重要的建設，包括香港大學、天星小輪、匯豐銀行、律敦治醫院等，都是由巴斯人捐款建立的。Homyar表示，「拜火教的教義鼓勵教徒幫助社會上的弱勢社群，亦強調教徒為人必需誠實。這些宗教規條培養了拜火教徒穩重可靠的性格，令他們成為受歡迎的商人；而尊重他人、樂善好施的教義，亦令他們為香港社會作出不少貢獻。至今，拜火教的社群仍支持香港許多慈善組織，但因他們行事低調、傾向匿名貢獻，所以港人一般鮮有留意。」
+          </p>
+          <p>
+    現時，全世界共有約十二萬巴斯人，當中逾半居於印度，其餘散佈於北美、大洋洲、中東及其他歐亞地區。香港的拜火教社群只有253人，是新西蘭的十分之一、倫敦的百分之一，實在不算龐大。然而，大部份的地區都沒有全職祭師，為何香港需要一名全職祭師？</p>
+        </div>
+ <div class="large-8 columns">
+  <img src="images/zo/history.jpg"/>
+</div>
+</div>
+      <hr/>
+
+
+<a name="sub2"></a>
+     <div class="row">
+      <h3 data-magellan-destination="sub2"><span>罕見全職祭師</span></h3>
+      <div class="large-12 columns">
+          <p>Homyar解釋，「首先，拜火教是一個父系宗教，即只有父親是拜火教徒的孩子，可以加入這個宗教。<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="拜火教鼓勵（但不規定）教徒通婚。然而，因宗教為父系宗教，女教徒若與非教徒通婚，他們的子女並不能加入拜火教；反之，若男教徒迎娶非教徒，他們的子女則可以加入拜火教。"><sup>4</sup></span>故此，拜火教沒有需要傳教。與大部份宗教相異，拜火教教義列明神職人員不需要是全職，教徒亦不應將生命奉獻給宗教。在大部份地區，祭師只會在特別場合（例如婚禮、葬禮）為教徒主持儀式，其餘時間進行與宗教無關的工作。在其他地方，廟宇長期開放，所以教徒可以自由進出禱告，並維持聖火<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="拜火教的教義強調尊重自然世界的萬物，當中以火為最重要的元素。火代表光明，既有催毀黑暗、一切邪惡事物的意義，亦是接觸神的媒介。故此，火是瑣羅亞斯德教的象徵，拜火教一名亦由此而來。拜火教廟內的聖火需保持燃燒，以象徵萬物生生不息。"><sup>5</sup></span>。但在香港，因禮拜堂位於商業大廈<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="香港的拜火教社群擁有銅鑼灣的樂善施大廈，當中有數層是禮拜堂及社群的會址，其餘樓層作商業用途。"><sup>6</sup></span>內，而且教徒人數稀少，禮拜堂需由專人打理。而且，<a href="zoroastrian2.html" target="_blank">香港的拜火教墳場<span data-tooltip aria-haspopup="true" class="has-tip" data-options="show_on:large" title="拜火教墳場位於跑馬地，詳見另文（按鍵）介紹。"><sup>7</sup></span></a>、組織捐款、大廈日常運作等不少事務亦需有人處理。這些都是聘請全職祭師的原因。」</p>
+          <p>「此外，拜火教將教徒分為祭師階級及非祭師階級，而且只有男性可以成為祭師。換言之，只有父親是祭師的男性教徒，可以成為祭師。香港的教徒稀少，符合條件擔任（全職或非全職）祭師的教徒亦只有一至兩位。所以，聘請一名全職祭師亦是比較方便的方法。」</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-6 columns">
+          <p>Homyar表示，他是六年前在孟買退休後，才來港擔任全職祭師。「雖然拜火教的祭師是父系承傳，但有意成為祭師的教徒，仍需透過考試，取得祭師資格。我在12歲時，曾於孟買的拜火教廟居住20天，研習教條及祭師進行各種儀式的禮儀等。一於大部份人，我在取得祭師資格後，繼續讀書、工作，只在有需要時才到廟宇主持儀式，生活與常人無異。退休後，我從教報得知香港有祭師空缺，便決定來港幫忙。」</p>
+        </div>
+        <div class="large-6 columns">
+            <figure>
+              <img src="images/zo/priest.jpg" alt="priestphoto">
+            <figcaption>
+              祭師Homyar
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <hr/> 
+
+<a name="sub3"></a>   
+<div class="row">
+  <h3 data-magellan-destination="sub3"><span>社會交流</span></h3>
+      <div class="large-6 columns">   
+          <p>除了主持宗教儀式及處理組織事務外，Homyar平日也有參與推廣拜火教的活動。「近年，香港市民對我們群體的認知有增加，但仍是相當有限。」他說，十月十二日是摩地(Hormusjee Naorojee Mody)的生忌，他每年都會到香港大學的社會交流前獻花。「然而，大部份的學生都不知道那是摩地的生忌，也不知摩地是大學的創辦人，甚至不知道那裡有一座像。直至兩年前，我邀請了當時剛上任的港大校長馬斐森（Professor Matthew Mathieson）參與儀式，大學的管理層才注意到這個日子。」
+          </p>
+          <p>Homyar表示，「拜火教沒有傳教，也導致較少人認識這個宗教和我們的社群。我們的宗教活動只限教徒參與，而日常生活方式也完全沒有任何限制。所以，拜火教徒可以說是沒有什麼令人印象特別深刻的地方。可是，我們自香港開埠以來已植根本土，當然也希望和本地社會有更多交流。」
+          </p>
+        </div>
+        <div class="large-6 columns">
+          <figure>
+          <img src="images/zo/modyhku.jpg" alt="Modyphoto"/>
+          <figcaption>
+              於香港大學陸佑堂的摩地像
+            </figcaption>
+          </figure>
+        </div>
+</div>
+<hr/>  
+
+<div class="row bibliography">
+<h5><span>參考資料</span></h5>
+<ol>
+  <li><a name="sup1"></a>Homyar表示，倫敦的拜火教社群近月亦聘請了一名全職祭師。但以他所知，其他地區沒有全職祭師。</li>
+  <li><a name="sup2"></a>丁新豹 著《非我族裔》（三聯書店（香港）有限公司 2014）第185頁。</li>
+  <li><a name="sup3"></a>《非我族裔》第187頁。</li>
+  <li><a name="sup4"></a>拜火教鼓勵（但不規定）教徒通婚。然而，因宗教為父系宗教，女教徒若與非教徒通婚，他們的子女並不能加入拜火教；反之，若男教徒迎娶非教徒，他們的子女則可以加入拜火教。</li>
+  <li><a name="sup5"></a>拜火教的教義強調尊重自然世界的萬物，當中以火為最重要的元素。火代表光明，既有催毀黑暗、一切邪惡事物的意義，亦是接觸神的媒介。故此，火是瑣羅亞斯德教的象徵，拜火教一名亦由此而來。拜火教廟內的聖火需保持燃燒，以象徵萬物生生不息。</li>
+   <li><a name="sup6"></a>香港的拜火教社群擁有銅鑼灣的樂善施大廈，當中有數層是禮拜堂及社群的會址，其餘樓層作商業用途。</li>
+   <li><a name="sup6"></a>拜火教墳場位於跑馬地，詳見<a href="zoroastrian2.html" target="_blank">另文</a>介紹。</li>
+  </ol>
+</div>
+<div class="row bibliography">
+<h5><span>延伸閱讀：</span></h5>
+<ol>
+  <li>沈旭暉<a href="https://www.facebook.com/shensimon/photos/a.923048494395968.1073741948.223783954322429/971790016188482/" target="_blank">〈拜火教徒在香港的足跡〉</a>信報2015年6月12日</li>
+  <li>認識穆斯林與伊斯蘭議題之窗 <a href="https://www.facebook.com/abdullahintw/photos/a.398912816787006.98397.394073903937564/1034843483193933/?type=1&theater" target="_blanket">〈祆祠訪問記〉</a>2015年7月28日</li>
+  <li>丁新豹 著<a href="www.worldcat.org/oclc/897787758" target="_blank">《非我族裔》</a>（三聯書店（香港）有限公司2014）</li>
+  <li>何志平 著<a href="www.worldcat.org/oclc/301774951" target="_blank">《天上人間‧香港民間信仰文化札記》</a>（次文化堂 2008）</li>
+  <li><a href="http://www.rtedu.hk/minorityhistory/" target="_blank">香港少數族裔墓園研究及考察計劃</a></li>
+  </ol>
+</div>
+<hr/> 
+<div class="row">
+<span>下期預告：<strong> <a href="zoroastrian2.html"> 拜火教在香港－墳墓與死亡</a></strong></span>
+</div>
+<hr/> 
+      <footer class="row">
+          <div class="row">
+            <div class="large-6 columns">
+              <ul class="inline-list left">
+                <li><a href="sikh.html">錫克教在香港</a></li>
+                <li><a href="islam.html">穆斯林在香港</a></li>
+                <li><a href="index.html">回到主頁</a></li>
+              </ul>
+            </div>
+            <div class="large-6 columns">
+              <ul class="inline-list right">
+            <p>© Interact New Media Production 2015</p>
+          </ul>
+            </div>
+          </div>
+      </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
+  <script src="scripts/vendor/jquery.mapael.js"></script>
+  <script src="scripts/maps/asia3.js"></script>
+  <script src="scripts/asia-map.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation-essential/5.5.1/js/foundation.min.js"></script>
+  <script src="scripts/foundation/foundation.tooltip.js"></script>
+  <script src="scripts/foundation/foundation.magellan.js"></script>
+  <script src="scripts/dse-uni-graph.js"></script>
+  <script src="scripts/navbar.js"></script>
+  <script src="scripts/navbar2.js"></script>
+  <script src="scripts/vendor/toucheffects.js"></script>
+
+
+</body>
+</html>

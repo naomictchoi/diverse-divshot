@@ -1,0 +1,51 @@
+@import url('reset.css');
+/* General Demo Style */
+
+
+.image {
+	position: absolute;
+	width: 100%
+}
+
+.overlay h2 {
+	position: absolute;
+	top: 20%;
+	left: 0;
+	text-align: right;
+	width: 100%;
+}
+
+.overlay  h5 {
+	position: absolute;
+	top: 70%;
+	width: 100%;
+	left: 0;
+	text-align: right;
+	display:block;
+}
+
+.overlay > h2  span {
+	color: white;
+	font: bold 80px/60px;
+	font-size: 80px;
+	background: rgb(0,0,0); /*fallback color*/
+	background: rgba(0,0,0,0.7);
+	padding: 10px;
+}
+
+.overlay > h5  span {
+	color: white;
+	font: normal 60px/60px;
+	background: rgb(0,0,0); /*fallback color*/
+	background: rgba(0,0,0,0.7);
+	padding: 3px;
+	padding-right:20px; 
+}
+
+.clr{
+	clear: both;
+}
+.main{
+	position:relative;
+    width:800px;
+}

@@ -1,18 +1,18 @@
 /* custom styles */
 
-@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexming.css);
 
 .full-width {
    width: 100%;
-   margin-left: auto;
-   margin-right: auto;
+   margin-left: 0;
+   margin-right: 0;
    max-width: initial;
 }
 	
 		h1 {
 			color:#5d5d5d;
 			font-size:30px;
-      font-family: 'Abel', 'cwTeXHei', serif;
+      font-family: 'Abel', 'cwTeXMing', serif;
 		}
 
 		.legend span {
@@ -26,18 +26,18 @@
 h4 {
 	color:#6ABEDA;
   text-align: center;
-  font-family: 'Abel', 'cwTeXHei', serif;
+  font-family: 'Abel', 'cwTeXMing', serif;
 }
 
 body {
-	background: #FFE5C8;
+	background: #FEFFDB;
   color: #418FB2;
-  font-family: 'Abel', 'cwTeXHei', serif;
+  font-family: 'Abel', 'cwTeXMing', serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #5d5d5d;
-  font-family: 'Abel', 'cwTeXHei', serif;
+  font-family: 'Abel', 'cwTeXMing', serif;
 }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     color: #5d5d5d;
@@ -50,30 +50,6 @@ a {
   color: #008CBA; }
   a:hover, a:focus {
     color: #0078a0; }
-
-  .sub-nav dt,
-  .sub-nav dd,
-  .sub-nav li {
-    color: #40CFA5; 
-  font-family: 'cwTeXHei', serif;}
-    .sub-nav dt a,
-    .sub-nav dd a,
-    .sub-nav li a {
-      color: #40CFA5; }
-      .sub-nav dt a:hover,
-      .sub-nav dd a:hover,
-      .sub-nav li a:hover {
-        color: #9CC3D0; }
-    .sub-nav dt.active a,
-    .sub-nav dd.active a,
-    .sub-nav li.active a {
-      background: #D57E77;
-      color: #FFFFFF; }
-      .sub-nav dt.active a:hover,
-      .sub-nav dd.active a:hover,
-      .sub-nav li.active a:hover {
-        background: #9C213F; }
-
 
 .bibliography li {
   color: #195644;
@@ -99,7 +75,7 @@ display: block;
   background: #09465B;
   color: #D57E77;
   font-size:0.9rem;
-  font-size: 1.2vw;
+  font-size: 1vw;
   height: 17%;
   width: 100%;
   opacity: 0;
@@ -121,4 +97,9 @@ opacity: 1;
   transform: translate(0px, 0px);
 }
 
-.magellan-container {display:none}
+  .column,
+  .columns {
+    position: relative;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    float: left; }
